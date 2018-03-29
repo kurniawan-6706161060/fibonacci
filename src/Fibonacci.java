@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Fibonacci {
@@ -13,13 +12,10 @@ public class Fibonacci {
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
+        int sum = 0;
         for (int i = 0; i<n; i++) {
-            if (i==n-1) {
-                System.out.print(fibo(i));
-            } else {
-                System.out.print(fibo(i)+" ");
-            }
+            sum += fibo(i);
         }
-        System.out.println();
+        System.out.println(sum);
     }
 }
